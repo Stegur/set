@@ -1,7 +1,7 @@
 {
-  "name": "clean-functions",
+  "name": "set",
   "version": "1.0.0",
-  "description": "clean-functions",
+  "description": "set",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
@@ -16,7 +16,7 @@
     "show:dist": "live-server dist"
   },
   "keywords": [
-    "clean-functions"
+    "set"
   ],
   "author": "Stegur",
   "license": "ISC",
