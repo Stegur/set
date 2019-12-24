@@ -11,7 +11,12 @@ export default class Team {
   }
 
   addAll(...heroes) {
-    heroes.forEach((hero) => this.members.add(hero));
+    heroes.forEach((hero) => {
+      if (this.members.has(hero)) {
+        throw new Error('Герой уже был добавлен в команду ранее');
+      }
+      this.members.add(hero);
+    });
   }
 
   toArray() {
