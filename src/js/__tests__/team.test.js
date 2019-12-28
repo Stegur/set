@@ -32,6 +32,14 @@ describe('Team', () => {
     expect(team.members).toEqual(expected);
   });
 
+  it('method addAll should add All heros to team only once', () => {
+    const team = new Team();
+
+    team.add(ursam);
+    team.addAll(lora, ursam, mankal);
+    expect(team.members.size).toBe(3);
+  });
+
   it('method toArray should return an array of heroes', () => {
     const expected = [...(new Set([lora, ursam, mankal]))];
 
